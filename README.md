@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# AutoElite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AutoElite is a modern car dealership website built with React, TypeScript, Tailwind CSS, and Vite. It features a sleek, responsive design, smooth navigation, and user authentication modals for Sign In and Sign Up.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive navigation bar with smooth scrolling
+- Hero, About, Inventory, and Contact sections
+- Stylish Sign In and Sign Up modal forms
+- Fixed navbar with blurred background
+- Clean, modern UI using Tailwind CSS
+- Built with React + TypeScript + Vite for fast development
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Open your browser:**
+   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Project Structure
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- `src/components/Navbar.tsx` — Navigation bar with Sign In/Sign Up modals
+- `src/components/Hero.tsx` — Hero section
+- `src/components/About.tsx` — About section
+- `src/components/Inventory.tsx` — Inventory section
+- `src/components/Contact.tsx` — Contact form
+- `src/components/Footer.tsx` — Footer
+- `src/App.tsx` — Main app layout and routing
+- `src/App.css` — Global and utility styles
+
+## Customization
+
+- Update the inventory, about, and contact sections in their respective files under `src/components/`.
+- Tailwind CSS classes can be adjusted for your branding and style preferences.
+- Authentication forms are UI only; connect them to your backend as needed.
