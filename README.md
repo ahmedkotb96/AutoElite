@@ -24,7 +24,7 @@ AutoElite is a modern car dealership website built with React, TypeScript, Tailw
    ```
 
 3. **Open your browser:**
-   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+   Visit (https://ahmedkotb96.github.io/AutoElite/)
 
 ## Project Structure
 
