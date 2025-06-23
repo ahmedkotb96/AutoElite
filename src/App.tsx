@@ -21,7 +21,7 @@ function HomeSections() {
 function App() {
   return (
     <div className="min-h-screen w-full bg-gray-900 text-gray-100">
-      <Router>
+      <Router basename="/AutoElite">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeSections />} />
